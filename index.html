@@ -1,52 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Pricing Component with Toggle</title>
+  </head>
 
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <body>
+    <main>
+      <h1>Our Pricing</h1>
+      <form id="pricing">
+        <fieldset aria-label="pricing-switch" role="radiogroup">
+          <legend class="sr-only">Select Pricing Plan</legend>
+          <div class="radio-switch">
+            <label for="annually" class="pricing-plan">
+              Annually
+            </label>
+            <span class="radio-switch__wrapper">
+              <input
+                type="radio"
+                name="plan-billing"
+                value="annually"
+                id="annually"
+              />
+              <input
+                type="radio"
+                name="plan-billing"
+                value="monthly"
+                id="monthly"
+                checked
+              />
+              <span
+                aria-hidden="true"
+                class="radio-switch__background"
+              ></span>
+              <span
+                aria-hidden="true"
+                class="radio-switch__circle"
+              ></span>
+            </span>
+            <label for="monthly" class="pricing-plan">
+              Monthly
+            </label>
+          </div>
+        </fieldset>
+      </form>
+      <div class="wrapper">
+        <div class="tier">
+          <h2 class="tier__title">Basic</h2>
+          <ul class="tier__feature-list">
+            <li class="tier__list-item">19.99</li>
+            <li class="tier__list-item">500 GB Storage</li>
+            <li class="tier__list-item">2 Users Allowed</li>
+            <li class="tier__list-item">Send up to 3 GB</li>
+          </ul>
+          <a href="" class="button">
+            Learn <span aria-hidden="true">More</span>
+          </a>
+          <span class="sr-only">About Basic Plan</span>
+        </div>
+        <div class="tier inverted">
+          <h2 class="tier__title">Professional</h2>
+          <ul class="tier__feature-list">
+            <li class="tier__list-item">24.99</li>
+            <li class="tier__list-item">1 TB Storage</li>
+            <li class="tier__list-item">5 Users Allowed</li>
+            <li class="tier__list-item">Send up to 10 GB</li>
+          </ul>
+          <a href="" class="button">
+            Learn <span aria-hidden="true">More</span>
+          </a>
+          <span class="sr-only">About Professional Plan</span>
+        </div>
+        <div class="tier">
+          <h2 class="tier__title">Master</h2>
+          <ul class="tier__feature-list">
+            <li class="tier__list-item">39.99</li>
+            <li class="tier__list-item">2 TB Storage</li>
+            <li class="tier__list-item">10 Users Allowed</li>
+            <li class="tier__list-item">Send up to 20 GB</li>
+          </ul>
+          <a href="" class="button">
+            Learn <span aria-hidden="true">More</span>
+          </a>
+          <span class="sr-only">About Master Plan</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="main-footer">
+        <p class="attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/a-woodworth" target="_blank"
+            >a-woodworth</a
+          >.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
