@@ -19,7 +19,7 @@
     <title>Frontend Mentor | Pricing Component with Toggle</title>
   </head>
 
-  <body>
+  <body class="multi-bg">
     <main>
       <h1>Our Pricing</h1>
       <form id="pricing">
@@ -60,60 +60,59 @@
       </form>
       <div class="wrapper">
         <div class="tier">
-          <h2 class="tier__title">Basic</h2>
-          <ul class="tier__feature-list">
-            <li class="tier__list-item">19.99</li>
+          <h2 id="basic" class="tier__title">Basic</h2>
+          <ul class="tier__feature-list" aria-labelledby="basic">
+            <li class="tier__list-item basic-price"></li>
             <li class="tier__list-item">500 GB Storage</li>
             <li class="tier__list-item">2 Users Allowed</li>
             <li class="tier__list-item">Send up to 3 GB</li>
           </ul>
           <a href="" class="button">
-            Learn <span aria-hidden="true">More</span>
+            Learn More
+            <span class="sr-only">Basic Plan</span>
           </a>
-          <span class="sr-only">About Basic Plan</span>
         </div>
         <div class="tier inverted">
-          <h2 class="tier__title">Professional</h2>
-          <ul class="tier__feature-list">
-            <li class="tier__list-item">24.99</li>
+          <h2 id="professional" class="tier__title">Professional</h2>
+          <ul
+            class="tier__feature-list"
+            aria-labelledby="professional"
+          >
+            <li class="tier__list-item professional-price"></li>
             <li class="tier__list-item">1 TB Storage</li>
             <li class="tier__list-item">5 Users Allowed</li>
             <li class="tier__list-item">Send up to 10 GB</li>
           </ul>
           <a href="" class="button">
-            Learn <span aria-hidden="true">More</span>
+            Learn More
+            <span class="sr-only">Professional Plan</span>
           </a>
-          <span class="sr-only">About Professional Plan</span>
         </div>
         <div class="tier">
-          <h2 class="tier__title">Master</h2>
-          <ul class="tier__feature-list">
-            <li class="tier__list-item">39.99</li>
+          <h2 id="master" class="tier__title">Master</h2>
+          <ul class="tier__feature-list" aria-labelledby="master">
+            <li class="tier__list-item master-price"></li>
             <li class="tier__list-item">2 TB Storage</li>
             <li class="tier__list-item">10 Users Allowed</li>
             <li class="tier__list-item">Send up to 20 GB</li>
           </ul>
           <a href="" class="button">
-            Learn <span aria-hidden="true">More</span>
+            Learn More
+            <span class="sr-only">Master Plan</span>
           </a>
-          <span class="sr-only">About Master Plan</span>
         </div>
       </div>
+      <p class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/a-woodworth" target="_blank"
+          >a-woodworth</a
+        >.
+      </p>
     </main>
-    <footer>
-      <div class="main-footer">
-        <p class="attribution">
-          Challenge by
-          <a
-            href="https://www.frontendmentor.io?ref=challenge"
-            target="_blank"
-            >Frontend Mentor</a
-          >. Coded by
-          <a href="https://github.com/a-woodworth" target="_blank"
-            >a-woodworth</a
-          >.
-        </p>
-      </div>
-    </footer>
   </body>
 </html>
