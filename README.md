@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/pricing-component-with-toggle----html-and-css-variables-8_3mR5uKaN)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/pricing_component_toggle)
 
 ### Built with
