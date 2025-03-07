@@ -227,13 +227,13 @@ h2 {
   flex-direction: column;
   justify-content: center;
   margin-block-end: var(--space-m);
-  min-width: 20.5rem;
+  width: 20.5rem;
   padding-block: var(--space-m);
   padding-inline: var(--space-m);
   text-align: center;
 
   @media (min-width: 75rem) {
-    min-width: 21.875rem;
+    width: 21.875rem;
   }
 }
 
@@ -259,6 +259,7 @@ h2 {
   justify-content: center;
   gap: var(--space-xxxs);
   font-size: var(--text-xl);
+  letter-spacing: -2.16px;
   line-height: var(--leading-micro);
   padding-block-start: 0;
   padding-block-end: var(--space-m);
