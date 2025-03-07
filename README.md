@@ -7,6 +7,7 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
+  - [Built with](#built-with)
 
 ## Overview
 
@@ -21,4 +22,9 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution]()
-- Live Site URL: [Live Site]()
+- Live Site URL: [Live Site](https://a-woodworth.github.io/pricing_component_toggle)
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS Custom properties (variables)

@@ -21,87 +21,94 @@
 
   <body class="multi-bg">
     <main>
-      <h1>Our Pricing</h1>
-      <form id="pricing">
-        <fieldset aria-label="pricing-switch" role="radiogroup">
-          <legend class="sr-only">Select Pricing Plan</legend>
-          <div class="radio-switch">
-            <label for="annually" class="pricing-plan annual-plan">
-              Annually
-            </label>
-            <span class="radio-switch__wrapper">
-              <input
-                type="radio"
-                name="plan-billing"
-                value="annually"
-                id="annually"
-              />
-              <input
-                type="radio"
-                name="plan-billing"
-                value="monthly"
-                id="monthly"
-                checked
-              />
-              <span
-                aria-hidden="true"
-                class="radio-switch__background"
-              ></span>
-              <span
-                aria-hidden="true"
-                class="radio-switch__circle"
-              ></span>
-            </span>
-            <label for="monthly" class="pricing-plan">
-              Monthly
-            </label>
+      <h1 class="sr-only">
+        TechStack - Supporting Your Storage Needs
+      </h1>
+      <section aria-labelledby="pricing-title">
+        <h2 id="pricing-title">Our Pricing</h2>
+        <form id="pricing">
+          <fieldset aria-label="pricing-switch" role="radiogroup">
+            <legend class="sr-only">Select Pricing Plan</legend>
+            <div class="radio-switch">
+              <label for="annually" class="pricing-plan annual-plan">
+                Annually
+              </label>
+              <span class="radio-switch__wrapper">
+                <input
+                  type="radio"
+                  name="plan-billing"
+                  value="annually"
+                  id="annually"
+                />
+                <input
+                  type="radio"
+                  name="plan-billing"
+                  value="monthly"
+                  id="monthly"
+                  checked
+                />
+                <span
+                  aria-hidden="true"
+                  class="radio-switch__background"
+                ></span>
+                <span
+                  aria-hidden="true"
+                  class="radio-switch__circle"
+                ></span>
+              </span>
+              <label for="monthly" class="pricing-plan">
+                Monthly
+              </label>
+            </div>
+          </fieldset>
+        </form>
+        <div class="wrapper">
+          <div class="tier">
+            <h3 id="basic" class="tier__title">Basic</h3>
+            <ul class="tier__feature-list" aria-labelledby="basic">
+              <li class="tier__list-item basic-price"></li>
+              <li class="tier__list-item">500 GB Storage</li>
+              <li class="tier__list-item">2 Users Allowed</li>
+              <li class="tier__list-item">Send up to 3 GB</li>
+            </ul>
+            <a href="#" class="button">
+              Learn More
+              <span class="sr-only">Basic Plan</span>
+            </a>
           </div>
-        </fieldset>
-      </form>
-      <div class="wrapper">
-        <div class="tier">
-          <h2 id="basic" class="tier__title">Basic</h2>
-          <ul class="tier__feature-list" aria-labelledby="basic">
-            <li class="tier__list-item basic-price"></li>
-            <li class="tier__list-item">500 GB Storage</li>
-            <li class="tier__list-item">2 Users Allowed</li>
-            <li class="tier__list-item">Send up to 3 GB</li>
-          </ul>
-          <a href="" class="button">
-            Learn More
-            <span class="sr-only">Basic Plan</span>
-          </a>
+          <div class="tier inverted">
+            <h3 id="professional" class="tier__title">
+              Professional
+            </h3>
+            <ul
+              class="tier__feature-list"
+              aria-labelledby="professional"
+            >
+              <li class="tier__list-item professional-price"></li>
+              <li class="tier__list-item">1 TB Storage</li>
+              <li class="tier__list-item">5 Users Allowed</li>
+              <li class="tier__list-item">Send up to 10 GB</li>
+            </ul>
+            <a href="#" class="button">
+              Learn More
+              <span class="sr-only">Professional Plan</span>
+            </a>
+          </div>
+          <div class="tier">
+            <h3 id="master" class="tier__title">Master</h3>
+            <ul class="tier__feature-list" aria-labelledby="master">
+              <li class="tier__list-item master-price"></li>
+              <li class="tier__list-item">2 TB Storage</li>
+              <li class="tier__list-item">10 Users Allowed</li>
+              <li class="tier__list-item">Send up to 20 GB</li>
+            </ul>
+            <a href="#" class="button">
+              Learn More
+              <span class="sr-only">Master Plan</span>
+            </a>
+          </div>
         </div>
-        <div class="tier inverted">
-          <h2 id="professional" class="tier__title">Professional</h2>
-          <ul
-            class="tier__feature-list"
-            aria-labelledby="professional"
-          >
-            <li class="tier__list-item professional-price"></li>
-            <li class="tier__list-item">1 TB Storage</li>
-            <li class="tier__list-item">5 Users Allowed</li>
-            <li class="tier__list-item">Send up to 10 GB</li>
-          </ul>
-          <a href="" class="button">
-            Learn More
-            <span class="sr-only">Professional Plan</span>
-          </a>
-        </div>
-        <div class="tier">
-          <h2 id="master" class="tier__title">Master</h2>
-          <ul class="tier__feature-list" aria-labelledby="master">
-            <li class="tier__list-item master-price"></li>
-            <li class="tier__list-item">2 TB Storage</li>
-            <li class="tier__list-item">10 Users Allowed</li>
-            <li class="tier__list-item">Send up to 20 GB</li>
-          </ul>
-          <a href="" class="button">
-            Learn More
-            <span class="sr-only">Master Plan</span>
-          </a>
-        </div>
-      </div>
+      </section>
       <p class="attribution">
         Challenge by
         <a

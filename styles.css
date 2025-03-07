@@ -72,6 +72,7 @@ html {
 body,
 h1,
 h2,
+h3,
 p,
 ul,
 fieldset,
@@ -136,7 +137,7 @@ body {
   }
 }
 
-h1 {
+h2 {
   font-size: var(--text-medium);
   line-height: var(--leading-fine);
   padding-block-start: var(--space-xxl);
@@ -252,6 +253,7 @@ h1 {
 }
 
 .tier__feature-list li:first-child {
+  color: var(--gray-blue-900);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -304,6 +306,10 @@ h1 {
 
 .inverted ul li {
   border-bottom: var(--stroke-inverted);
+}
+
+.inverted ul li:first-child {
+  color: var(--white);
 }
 
 .button {
